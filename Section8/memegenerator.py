@@ -28,4 +28,5 @@ class MemeGenerator:
         for text,x,y in self.tex:
             img.create_text(text,x,y, FONT_FILE,size=SIZE,color=COLOR)
         img.show()
+        img.pil_image.save('simpleccode.jpg')
         
